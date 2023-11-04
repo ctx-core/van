@@ -1,0 +1,49 @@
+{
+	"name": "@ctx-core/van",
+	"version": "0.0.0",
+	"description": "ctx-core extensions for VanJS",
+	"keywords": [
+		"ctx-core",
+		"mini-van-plate",
+		"VanJS",
+		"vanjs-core"
+	],
+	"homepage": "https://github.com/ctx-core/van#readme",
+	"bugs": {
+		"url": "https://github.com/ctx-core/van/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ctx-core/van.git"
+	},
+	"license": "Apache-2.0",
+	"author": "Brian Takita",
+	"type": "module",
+	"types": "./src/index.d.ts",
+	"svelte": "./src/index.js",
+	"exports": {
+		".": "./src/index.js",
+		"./package.json": "./package.json"
+	},
+	"scripts": {
+		"build": ":",
+		"clean": ":",
+		"exec": "$@",
+		"prepublishOnly": "pnpm clean && pnpm build && pnpm test",
+		"test": "pnpm test-unit && check-dts",
+		"test-unit": "tsx node_modules/uvu/bin.js . '\\.test\\.(ts|js)$'",
+		"test-unit-coverage": "c8 pnpm test-unit"
+	},
+	"devDependencies": {
+		"c8": "^8.0.1",
+		"check-dts": "^0.7.2",
+		"tsx": "^3.14.0",
+		"typescript": "next",
+		"uvu": "^0.5.6"
+	},
+	"publishConfig": {
+		"access": "public",
+		"cache": "~/.npm"
+	},
+	"sideEffects": false
+}

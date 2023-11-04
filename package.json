@@ -37,13 +37,19 @@
 	"devDependencies": {
 		"c8": "^8.0.1",
 		"check-dts": "^0.7.2",
+		"mini-van-plate": "^0.5.3",
 		"tsx": "^3.14.0",
 		"typescript": "next",
-		"uvu": "^0.5.6"
+		"uvu": "^0.5.6",
+		"van-type-delegate": "0.0.0",
+		"vanjs-core": "^1.2.6"
 	},
 	"publishConfig": {
 		"access": "public",
 		"cache": "~/.npm"
 	},
-	"sideEffects": false
+	"sideEffects": false,
+	"dependencies": {
+		"@ctx-core/object": "workspace:^28.2.2"
+	}
 }

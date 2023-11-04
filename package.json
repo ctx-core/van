@@ -1,5 +1,5 @@
 {
-	"name": "@ctx-core/van",
+	"name": "@ctx-core/vanjs",
 	"version": "0.0.0",
 	"description": "ctx-core extensions for VanJS",
 	"keywords": [

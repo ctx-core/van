@@ -1,5 +1,11 @@
 # @ctx-core/vanjs
 
+## 1.3.1
+
+### Patch Changes
+
+- van-type-delegate: 1.1.0 -> 1.1.1
+
 ## 1.3.0
 
 ### Minor Changes

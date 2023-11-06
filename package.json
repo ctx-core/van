@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/vanjs",
-	"version": "1.3.0",
+	"version": "1.3.1",
 	"description": "ctx-core extensions for VanJS",
 	"keywords": [
 		"ctx-core",
@@ -46,7 +46,7 @@
 		"tsx": "^3.14.0",
 		"typescript": "next",
 		"uvu": "^0.5.6",
-		"van-type-delegate": "1.1.0",
+		"van-type-delegate": "1.1.1",
 		"vanjs-core": "^1.2.6"
 	},
 	"publishConfig": {

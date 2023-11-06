@@ -1,5 +1,13 @@
 # @ctx-core/vanjs
 
+## 1.4.0
+
+### Minor Changes
+
+- - val\_\_be_derive_pair_T
+
+  - val\_\_be_state_triple_T
+
 ## 1.3.1
 
 ### Patch Changes

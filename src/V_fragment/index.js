@@ -1,15 +1,24 @@
 import { compact } from '@ctx-core/array'
 import { fragment_ } from '@ctx-core/dom'
 import { van_internals_ } from '../van'
-export function V_fragment(ctx, ..._children) {
+/** @typedef {import('@ctx-core/object').Ctx}Ctx */
+/** @typedef {import('van-type-delegate').ChildDom}ChildDom */
+/**
+ * @param {{ ctx:Ctx }|Ctx}props_OR_ctx
+ * @param {ChildDom[]}_children
+ * @returns {DocumentFragment|any}
+ * @constructor
+ */
+export function V_fragment(props_OR_ctx, ..._children) {
 	if (globalThis['window']) return window__fragment_()
-	const { elementProto, plainValue, protoOf } = van_internals_(ctx)
-	const children = compact(_children)
+	let ctx = props_OR_ctx?.ctx ?? props_OR_ctx
+	let { elementProto, plainValue, protoOf } = van_internals_(ctx)
+	let children = compact(_children)
 	return Object.setPrototypeOf({
 		children,
 		renderToBuf(buf) {
-			for (const c of this.children) {
-				const plainC = plainValue(c)
+			for (let c of this.children) {
+				let plainC = plainValue(c)
 				protoOf(plainC) === elementProto
 					? plainC.renderToBuf(buf)
 					// TODO: use buf.push(escape(plainC!.toString())) instead?
@@ -19,8 +28,8 @@ export function V_fragment(ctx, ..._children) {
 		render: elementProto.render
 	}, elementProto)
 	function window__fragment_() {
-		const fragment = fragment_()
-		const div = H_(ctx).div(...children)
+		let fragment = fragment_()
+		let div = H_(ctx).div(...children)
 		let child
 		while (child = div.firstChild) {
 			fragment.appendChild(child)

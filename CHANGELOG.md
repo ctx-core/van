@@ -1,5 +1,14 @@
 # @ctx-core/vanjs
 
+## 1.6.0
+
+### Minor Changes
+
+- props_OR_ctx:{ ctx:Ctx }|Ctx:
+
+      V_fragment
+      V_raw
+
 ## 1.5.0
 
 ### Minor Changes

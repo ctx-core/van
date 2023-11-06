@@ -12,8 +12,8 @@ export function V_fragment(ctx, ..._children) {
 				const plainC = plainValue(c)
 				protoOf(plainC) === elementProto
 					? plainC.renderToBuf(buf)
-				// TODO: use buf.push(escape(plainC!.toString())) instead?
-			: buf.push(plainC.toString())
+					// TODO: use buf.push(escape(plainC!.toString())) instead?
+					: buf.push(plainC.toString())
 			}
 		},
 		render: elementProto.render

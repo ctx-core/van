@@ -58,7 +58,7 @@ test('be_state_triple__new|+id|+be__params', ()=>{
 	equal(ctx1.get('num'), num$_(ctx))
 })
 function num__test(ctx:Ctx, ...arg_a:be_state_triple_T<State<number>>) {
-  const [num$_, num_, num__set] = arg_a
+	const [num$_, num_, num__set] = arg_a
 	equal(num$_(ctx).val, 1)
 	equal(num_(ctx), 1)
 	num__set(ctx, 5)

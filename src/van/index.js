@@ -1,4 +1,4 @@
-import { be_, be__set, ctx__set } from '@ctx-core/object'
+import { be_, ctx__set } from '@ctx-core/object'
 /** @typedef {import('@ctx-core/object').Be}Be */
 /** @typedef {import('@ctx-core/object').Ctx}Ctx */
 /** @typedef {import('van-type-delegate').VanShape}VanShape */

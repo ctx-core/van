@@ -1,5 +1,11 @@
 # @ctx-core/vanjs
 
+## 1.1.2
+
+### Patch Changes
+
+- dependencies: - workspace:
+
 ## 1.1.1
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/vanjs",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"description": "ctx-core extensions for VanJS",
 	"keywords": [
 		"ctx-core",
@@ -34,6 +34,11 @@
 		"test-unit": "tsx node_modules/uvu/bin.js . '\\.test\\.(ts|js)$'",
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
+	"dependencies": {
+		"@ctx-core/array": "^26.15.7",
+		"@ctx-core/dom": "15.0.2",
+		"@ctx-core/object": "^29.0.0"
+	},
 	"devDependencies": {
 		"c8": "^8.0.1",
 		"check-dts": "^0.7.2",
@@ -48,10 +53,5 @@
 		"access": "public",
 		"cache": "~/.npm"
 	},
-	"sideEffects": false,
-	"dependencies": {
-		"@ctx-core/array": "workspace:^26.15.7",
-		"@ctx-core/dom": "15.0.2",
-		"@ctx-core/object": "workspace:^29.0.0"
-	}
+	"sideEffects": false
 }

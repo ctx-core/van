@@ -1,5 +1,11 @@
 # @ctx-core/vanjs
 
+## 1.5.0
+
+### Minor Changes
+
+- VanShape_w_undefined: + generics: <van_T extends VanShape>: variant of VanShape<van_T>
+
 ## 1.4.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # @ctx-core/vanjs
 
+## 1.2.0
+
+### Minor Changes
+
+- val**be_derive_pair**new: arguments: fix: - van\_
+
 ## 1.1.2
 
 ### Patch Changes

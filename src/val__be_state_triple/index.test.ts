@@ -3,7 +3,7 @@ import { ctx__new } from '@ctx-core/object'
 import van from 'mini-van-plate/van-plate'
 import { test } from 'uvu'
 import { equal } from 'uvu/assert'
-import { val__be_derive_pair__new, val__be_state_triple__new, van_, van__set } from '../index'
+import { val__be_derive_pair__new, val__be_state_triple__new, van__set } from '../index'
 test('val__be_state_triple|-id|-be_params', ()=>{
 	const ctx = ctx__new()
 	van__set(ctx, van)
@@ -17,7 +17,7 @@ test('val__be_state_triple|-id|-be_params', ()=>{
 	const [
 		derive__num$_,
 		derive__num_,
-	] = val__be_derive_pair__new(van_, ctx=>state_(ctx) + 2)
+	] = val__be_derive_pair__new(ctx=>state_(ctx) + 2)
 	equal(derive__num$_(ctx).val, 3)
 	equal(derive__num_(ctx), 3)
 	state__set(ctx, 11)

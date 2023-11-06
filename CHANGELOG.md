@@ -1,5 +1,11 @@
 # @ctx-core/vanjs
 
+## 1.6.1
+
+### Patch Changes
+
+- fix: directory imports: + \*/index.js
+
 ## 1.6.0
 
 ### Minor Changes

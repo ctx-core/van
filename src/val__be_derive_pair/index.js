@@ -1,6 +1,6 @@
 import { be_arg_triple__new } from '@ctx-core/object'
-import { be_derive_pair__new } from '../be_derive_pair'
-import { reactive_derive__new } from '../state'
+import { be_derive_pair__new } from '../be_derive_pair/index.js'
+import { reactive_derive__new } from '../state/index.js'
 /** @typedef {import('@ctx-core/object').Be}Be */
 /** @typedef {import('@ctx-core/object').be__params_T}be__params_T */
 /** @typedef {import('@ctx-core/object').Ctx}Ctx */

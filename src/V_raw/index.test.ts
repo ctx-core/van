@@ -4,8 +4,8 @@ import van from 'mini-van-plate/van-plate'
 import { test } from 'uvu'
 import { equal } from 'uvu/assert'
 import type { PlateElement } from 'van-type-delegate'
-import { V_raw } from '../index'
-import { van__set } from '../van'
+import { V_raw } from '../index.js'
+import { van__set } from '../van/index.js'
 test('V_raw', ()=>{
 	const ctx = ctx__new()
 	van__set(ctx, van)

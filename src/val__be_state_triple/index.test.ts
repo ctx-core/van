@@ -3,7 +3,7 @@ import { ctx__new } from '@ctx-core/object'
 import van from 'mini-van-plate/van-plate'
 import { test } from 'uvu'
 import { equal } from 'uvu/assert'
-import { val__be_derive_pair__new, val__be_state_triple__new, van__set } from '../index'
+import { val__be_derive_pair__new, val__be_state_triple__new, van__set } from '../index.js'
 test('val__be_state_triple|-id|-be_params', ()=>{
 	const ctx = ctx__new()
 	van__set(ctx, van)

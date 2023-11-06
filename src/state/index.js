@@ -1,5 +1,5 @@
 import { be_ } from '@ctx-core/object'
-import { van_, van_internals_ } from '../van'
+import { van_, van_internals_ } from '../van/index.js'
 /** @typedef {import('van-type-delegate').VanShape}VanShape */
 let van_state_o_ = be_('van_state_o_', ()=>({
 	curDeps: undefined

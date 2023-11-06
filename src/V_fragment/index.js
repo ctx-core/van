@@ -1,6 +1,6 @@
 import { compact } from '@ctx-core/array'
 import { fragment_ } from '@ctx-core/dom'
-import { van_internals_ } from '../van'
+import { van_internals_ } from '../van/index.js'
 /** @typedef {import('@ctx-core/object').Ctx}Ctx */
 /** @typedef {import('van-type-delegate').ChildDom}ChildDom */
 /**

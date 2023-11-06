@@ -1,10 +1,10 @@
 import { ctx__new } from '@ctx-core/object'
-import { test } from 'uvu'
 // @ts-ignore
 import van from 'mini-van-plate/van-plate'
+import { test } from 'uvu'
 import { equal } from 'uvu/assert'
-import { van__set } from '../van'
 import { reactive_derive__new, reactive_state__new } from '../index'
+import { van__set } from '../van'
 test('reactive_state__new+reactive_derive__new', ()=>{
 	const ctx = ctx__new()
 	van__set(ctx, van)

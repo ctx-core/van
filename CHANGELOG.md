@@ -1,5 +1,18 @@
 # @ctx-core/vanjs
 
+## 1.3.0
+
+### Minor Changes
+
+- generics: + val_T: addressing type inference:
+
+      be_derive_pair__new
+      be_state_triple__new
+
+### Patch Changes
+
+- optimize imports
+
 ## 1.2.0
 
 ### Minor Changes

@@ -1,6 +1,6 @@
-import { test } from 'uvu'
 // @ts-ignore
 import van from 'mini-van-plate/van-plate'
+import { test } from 'uvu'
 import { equal } from 'uvu/assert'
 import { props_clean_van__new } from '../index.js'
 test('props_clean_van__new|removes nullish props', ()=>{

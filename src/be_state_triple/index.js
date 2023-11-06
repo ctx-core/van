@@ -1,5 +1,4 @@
-import { be_ } from '@ctx-core/object'
-import { _be_state_arg_triple__new } from '../_be_state_arg_triple'
+import { be_, be_arg_triple__new } from '@ctx-core/object'
 /** @typedef {import('./index.d.ts').be_state_triple_T}be_state_triple_T */
 /** @typedef {import('./index.d.ts').be_state_triple__new__arg_a_T}be_state_triple___arg_a_T */
 /**
@@ -13,7 +12,7 @@ export function be_state_triple__new(...arg_a) {
 		id,
 		state__new,
 		be__params
-	] = _be_state_arg_triple__new(...arg_a)
+	] = be_arg_triple__new(...arg_a)
 	const _be_ =
 		(be__params && be__params.be_)
 		?? be_

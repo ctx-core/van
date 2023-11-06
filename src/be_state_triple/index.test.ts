@@ -1,9 +1,8 @@
 import { type Ctx, ctx__new } from '@ctx-core/object'
-import { test } from 'uvu'
 // @ts-ignore
 import van from 'mini-van-plate/van-plate'
+import { test } from 'uvu'
 import { equal } from 'uvu/assert'
-import type { State } from 'van-type-delegate'
 import { be_state_triple__new, type be_state_triple_T } from '../index.js'
 test('be_state_triple__new|-id|-be__params', ()=>{
 	const ctx = ctx__new()
@@ -57,7 +56,7 @@ test('be_state_triple__new|+id|+be__params', ()=>{
 	equal(ctx0.get('num'), undefined)
 	equal(ctx1.get('num'), num$_(ctx))
 })
-function num__test(ctx:Ctx, ...arg_a:be_state_triple_T<State<number>>) {
+function num__test(ctx:Ctx, ...arg_a:be_state_triple_T<number>) {
   const [num$_, num_, num__set] = arg_a
 	equal(num$_(ctx).val, 1)
 	equal(num_(ctx), 1)

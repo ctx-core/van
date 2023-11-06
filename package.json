@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/vanjs",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "ctx-core extensions for VanJS",
 	"keywords": [
 		"ctx-core",
@@ -41,7 +41,7 @@
 		"tsx": "^3.14.0",
 		"typescript": "next",
 		"uvu": "^0.5.6",
-		"van-type-delegate": "0.0.0",
+		"van-type-delegate": "1.0.0",
 		"vanjs-core": "^1.2.6"
 	},
 	"publishConfig": {
@@ -50,6 +50,8 @@
 	},
 	"sideEffects": false,
 	"dependencies": {
-		"@ctx-core/object": "workspace:^28.2.2"
+		"@ctx-core/array": "workspace:^26.15.7",
+		"@ctx-core/dom": "workspace:^15.0.1",
+		"@ctx-core/object": "workspace:^29.0.0"
 	}
 }

@@ -3,7 +3,7 @@ import type { ChildDom, VanShape } from 'van-type-delegate'
 export declare function van_<
 	van_T extends VanShape,
 	ctx_T extends Ctx = Ctx
->(ctx:ctx_T):van_T|null
+>(ctx:ctx_T):van_T
 export declare function van__set<
 	van_T extends VanShape,
 	ctx_T extends Ctx = Ctx

@@ -1,5 +1,15 @@
 # @ctx-core/vanjs
 
+## 1.1.0
+
+### Minor Changes
+
+- van\_: return type: - |null: simpler type inference
+- generics: van_T extends VanShape: fix: type inference:
+
+      val__be_derive_pair__new
+      val__be_state_triple__new
+
 ## 1.0.1
 
 ### Patch Changes

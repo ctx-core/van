@@ -1,5 +1,15 @@
 # @ctx-core/vanjs
 
+## 1.7.0
+
+### Minor Changes
+
+- van\_: generics: van_T extends VanShape: default type is VanShape
+
+### Patch Changes
+
+- V*fragment: browser: render elements: fix: use van*(ctx).tags to render element
+
 ## 1.6.1
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 import { compact } from '@ctx-core/array'
 import { fragment_ } from '@ctx-core/dom'
-import { van_internals_ } from '../van/index.js'
+import { van_, van_internals_ } from '../van/index.js'
 /** @typedef {import('@ctx-core/object').Ctx}Ctx */
 /** @typedef {import('van-type-delegate').ChildDom}ChildDom */
 /**
@@ -29,7 +29,7 @@ export function V_fragment(props_OR_ctx, ..._children) {
 	}, elementProto)
 	function window__fragment_() {
 		let fragment = fragment_()
-		let div = H_(ctx).div(...children)
+		let div = van_(ctx).tags.div(...children)
 		let child
 		while (child = div.firstChild) {
 			fragment.appendChild(child)

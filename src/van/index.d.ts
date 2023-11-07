@@ -1,7 +1,7 @@
 import type { Ctx } from '@ctx-core/object'
 import type { ChildDom, VanShape } from 'van-type-delegate'
 export declare function van_<
-	van_T extends VanShape,
+	van_T extends VanShape = VanShape,
 	ctx_T extends Ctx = Ctx
 >(ctx:ctx_T):van_T
 export declare function van__set<

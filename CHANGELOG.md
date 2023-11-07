@@ -1,5 +1,17 @@
 # @ctx-core/vanjs
 
+## 2.1.0
+
+### Minor Changes
+
+- props_clean**van**new: + props_clean
+- props_clean**van**new: tagsNS: fix: implementation return type TagNS_props_clean
+- - props_clean
+
+### Patch Changes
+
+- H*,S*: when van\_(ctx) props_clean is truthy: call .tags,.tagsNS directly
+
 ## 2.0.1
 
 ### Patch Changes

@@ -2,6 +2,7 @@
 import type { ChildDom, CoreVan, MiniVan, PlateVan, Props, TagFunc, Tags, VanShape } from 'van-type-delegate'
 export declare function props_clean__van__new<van_T extends VanShape>(van:van_T):Van_props_clean<van_T>
 export declare function props_clean__tags__new<van_T extends VanShape>(tags:Tags<van_T>):Tags_props_clean<van_T>
+export declare function props_clean(props:Props):Props
 export type Props_props_clean = Record<string, Props[string]|undefined>
 export type TagFunc_props_clean<van_T extends VanShape> = (
 	first?:Props|ChildDom<van_T>|Props_props_clean,
@@ -11,6 +12,7 @@ export type Tags_props_clean<van_T extends VanShape> = Record<string, TagFunc_pr
 export type TagNS_props_clean<van_T extends VanShape> =
 	(namespaceURI:string)=>Readonly<Record<string, TagFunc_props_clean<van_T>>>
 export type Van_props_clean<van_T extends VanShape> = van_T&{
+	props_clean:typeof props_clean
 	tags:Tags_props_clean<van_T>
 	tagsNS:TagNS_props_clean<van_T>
 }

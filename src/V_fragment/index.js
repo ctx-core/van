@@ -11,9 +11,9 @@ import { van_, van_internals_ } from '../van/index.js'
  */
 export function V_fragment(props_OR_ctx, ..._children) {
 	let ctx = props_OR_ctx?.ctx ?? props_OR_ctx
-	if (globalThis['window']) return window__fragment_()
-	let { elementProto, plainValue, protoOf } = van_internals_(ctx)
 	let children = compact(_children)
+	if (globalThis['document']) return browser__fragment_()
+	let { elementProto, plainValue, protoOf } = van_internals_(ctx)
 	return Object.setPrototypeOf({
 		children,
 		renderToBuf(buf) {
@@ -27,7 +27,7 @@ export function V_fragment(props_OR_ctx, ..._children) {
 		},
 		render: elementProto.render
 	}, elementProto)
-	function window__fragment_() {
+	function browser__fragment_() {
 		let fragment = fragment_()
 		let div = van_(ctx).tags.div(...children)
 		let child

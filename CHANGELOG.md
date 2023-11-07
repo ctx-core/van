@@ -1,5 +1,13 @@
 # @ctx-core/vanjs
 
+## 1.7.2
+
+### Patch Changes
+
+- V*fragment: browser\_\_fragment*: fix: children reference
+- Updated dependencies
+  - @ctx-core/dom@15.0.3
+
 ## 1.7.1
 
 ### Patch Changes

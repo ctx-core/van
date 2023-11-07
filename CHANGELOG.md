@@ -1,5 +1,11 @@
 # @ctx-core/vanjs
 
+## 1.7.1
+
+### Patch Changes
+
+- V*fragment: window\_\_fragment*: fix: scope to ctx
+
 ## 1.7.0
 
 ### Minor Changes

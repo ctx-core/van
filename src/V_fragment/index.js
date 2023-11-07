@@ -10,8 +10,8 @@ import { van_, van_internals_ } from '../van/index.js'
  * @constructor
  */
 export function V_fragment(props_OR_ctx, ..._children) {
-	if (globalThis['window']) return window__fragment_()
 	let ctx = props_OR_ctx?.ctx ?? props_OR_ctx
+	if (globalThis['window']) return window__fragment_()
 	let { elementProto, plainValue, protoOf } = van_internals_(ctx)
 	let children = compact(_children)
 	return Object.setPrototypeOf({

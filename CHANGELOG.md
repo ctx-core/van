@@ -1,5 +1,26 @@
 # @ctx-core/vanjs
 
+## 2.0.0
+
+### Major Changes
+
+- props_clean_van**new→props_clean**van\_\_new
+- type name changes:
+
+      Props_w_undefined→Props_props_clean
+      TagFunc_w_undefined→TagFunc_props_clean
+      Tags_w_undefined→Tags_props_clean
+      TagNS_w_undefined→TagNS_props_clean
+      Van_w_undefined→Van_props_clean
+      VanShape_w_undefined→VanShape_props_clean
+
+### Minor Changes
+
+- - props_clean**tags**new
+- S\_
+- - vanx\_,vanx\_\_set,vanx_T
+- - H\_
+
 ## 1.7.2
 
 ### Patch Changes
@@ -118,7 +139,7 @@
       be_state_triple__new
       be_state_triple_T
       be_state_triple__new__arg_a_T
-      props_clean_van__new
+      props_clean__van__new
       Props_w_undefined
       TagFunc_w_undefined
       Tags_w_undefined

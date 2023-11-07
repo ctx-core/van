@@ -1,6 +1,7 @@
 import { be_, ctx__set } from '@ctx-core/object'
 /** @typedef {import('@ctx-core/object').Be}Be */
 /** @typedef {import('@ctx-core/object').Ctx}Ctx */
+/** @typedef {import('van-type-delegate').State}State */
 /** @typedef {import('van-type-delegate').VanShape}VanShape */
 /** @typedef {import('./index.d.ts').van_internals_T}van_internals_T */
 /** @typedef {import('./index.d.ts').van_middleware_T}van_middleware_T */
@@ -41,4 +42,4 @@ export function van__set(ctx, van) {
  * @returns {van_internals_T}
  * @private
  */
-export let van_internals_ = be_('van_internals_', ctx=>null)
+export let van_internals_ = be_('van_internals_', ()=>null)

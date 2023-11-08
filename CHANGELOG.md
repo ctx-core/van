@@ -1,5 +1,14 @@
 # @ctx-core/vanjs
 
+## 2.1.1
+
+### Patch Changes
+
+- dependencies:
+
+      - ∋ vanjs-core
+      - ∋ vanjs-ext
+
 ## 2.1.0
 
 ### Minor Changes

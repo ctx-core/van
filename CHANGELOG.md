@@ -1,5 +1,11 @@
 # @ctx-core/vanjs
 
+## 2.1.2
+
+### Patch Changes
+
+- vanx: use ∋ vanjs-ext types
+
 ## 2.1.1
 
 ### Patch Changes

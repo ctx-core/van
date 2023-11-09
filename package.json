@@ -47,7 +47,7 @@
 		"check-dts": "^0.7.2",
 		"jsdom": "^22.1.0",
 		"mini-van-plate": "^0.5.3",
-		"tsx": "^3.14.0",
+		"tsx": "^4.0.0",
 		"typescript": "next",
 		"uvu": "^0.5.6"
 	},

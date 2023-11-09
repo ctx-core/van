@@ -1,5 +1,18 @@
 # @ctx-core/vanjs
 
+## 2.2.0
+
+### Minor Changes
+
+- van*internals*: auto-memoize
+
+### Patch Changes
+
+- Updated dependencies
+  - @ctx-core/object@30.0.0
+  - @ctx-core/array@26.15.9
+  - @ctx-core/dom@15.0.6
+
 ## 2.1.4
 
 ### Patch Changes

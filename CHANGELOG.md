@@ -1,5 +1,16 @@
 # @ctx-core/vanjs
 
+## 2.3.2
+
+### Patch Changes
+
+- fix: missing tsconfig.json
+- Updated dependencies
+  - @ctx-core/array@27.0.2
+  - @ctx-core/dom@15.1.2
+  - @ctx-core/object@30.1.2
+  - van-type-delegate@1.2.2
+
 ## 2.3.1
 
 ### Patch Changes

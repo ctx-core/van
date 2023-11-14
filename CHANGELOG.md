@@ -1,5 +1,13 @@
 # @ctx-core/vanjs
 
+## 2.3.4
+
+### Patch Changes
+
+- Updated dependencies
+  - @ctx-core/array@27.0.4
+  - van-type-delegate@1.2.4
+
 ## 2.3.3
 
 ### Patch Changes

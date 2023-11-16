@@ -48,7 +48,8 @@ export function reactive_state__new(ctx, initVal) {
 export function reactive_derive__new(ctx, f, s = reactive_state__new(ctx), dom) {
 	let van = van_(ctx)
 	if (is_van_core_(van)) return van.derive(f, s, dom)
-	let deps = new Set, listener = { f, s: new WeakRef(s) }
+	let deps = new Set
+	let listener = { f, s: new WeakRef(s) }
 	let van_state_o = van_state_o_(ctx)
 	// begin runAndCaptureDeps
 	let prevDeps = van_state_o.curDeps

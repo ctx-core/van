@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/vanjs",
-	"version": "2.3.15",
+	"version": "2.3.16",
 	"description": "ctx-core extensions for VanJS",
 	"keywords": [
 		"ctx-core",
@@ -51,9 +51,9 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
-		"@ctx-core/array": "^27.0.13",
-		"@ctx-core/dom": "15.1.13",
-		"@ctx-core/object": "^30.4.5",
+		"@ctx-core/array": "^27.0.14",
+		"@ctx-core/dom": "15.1.14",
+		"@ctx-core/object": "^30.4.6",
 		"van-type-delegate": "1.2.6",
 		"vanjs-ext": "^0.1.3"
 	},

@@ -1,32 +1,28 @@
-import { be_, be_arg_triple__new } from '@ctx-core/object'
-/** @typedef {import('./index.d.ts').be_state_triple_T}be_state_triple_T */
-/** @typedef {import('./index.d.ts').be_state_triple__new__arg_a_T}be_state_triple___arg_a_T */
+import { be_ } from '@ctx-core/object'
+import { reactive_state__new } from '../state/index.js'
+/** @typedef {import('../be_/index.d.ts').be__val__new_T} */
+/** @typedef {import('./index.d.ts').be_state_triple_T} */
+/** @typedef {import('./index.d.ts').be_state_triple__new__arg_a_T} */
 /**
  *
- * @param {be_state_triple___arg_a_T}arg_a
+ * @param {be__val__new_T<unknown>}val__new
  * @returns {be_state_triple_T}
  * @private
  */
-export function be_state_triple__new(...arg_a) {
-	let [
-		id,
-		state__new,
-		be__params
-	] = be_arg_triple__new(...arg_a)
-	const _be_ =
-		(be__params && be__params.be_)
-		?? be_
-	const val$_ =
-		id
-			? _be_(id, state__new, be__params)
-			: _be_(state__new, be__params)
-	const val_ = ctx=>val$_(ctx).val
-	const val__set = (ctx, val)=>{
-		val$_(ctx).val = val
-	}
-	return [
-		val$_,
-		val_,
-		val__set
+export function be_state_triple__new(val__new) {
+	let oninit
+	const be_state_triple = [
+		be_(ctx=>{
+			let state = reactive_state__new(ctx, val__new(ctx))
+			oninit?.(ctx, state)
+			return state
+		}),
+		ctx=>be_state_triple[0](ctx).val,
+		(ctx, val)=>{
+			be_state_triple[0](ctx).val = val
+		},
 	]
+	be_state_triple.config = params=>(be_state_triple[0].config(params), be_state_triple)
+	be_state_triple.oninit = _oninit=>(oninit = _oninit, be_state_triple)
+	return be_state_triple
 }

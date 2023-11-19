@@ -1,13 +1,13 @@
 /// <reference lib="dom" />
 const protoOf = Object.getPrototypeOf
 const objProto = protoOf({})
-/** @typedef {import('van-type-delegate').ChildDom}ChildDom */
-/** @typedef {import('van-type-delegate').Props}Props */
-/** @typedef {import('van-type-delegate').TagFunc}TagFunc */
-/** @typedef {import('van-type-delegate').Tags}Tags */
-/** @typedef {import('van-type-delegate').VanShape}VanShape */
-/** @typedef {import('./index.d.ts').Tags_props_clean}Tags_props_clean */
-/** @typedef {import('./index.d.ts').Van_props_clean}Van_w_undefined */
+/** @typedef {import('van-type-delegate').ChildDom} */
+/** @typedef {import('van-type-delegate').Props} */
+/** @typedef {import('van-type-delegate').TagFunc} */
+/** @typedef {import('van-type-delegate').Tags} */
+/** @typedef {import('van-type-delegate').VanShape} */
+/** @typedef {import('./index.d.ts').Tags_props_clean} */
+/** @typedef {import('./index.d.ts').Van_props_clean} */
 /**
  * @param {VanShape}van
  * @returns {VanShape_w_undefined}

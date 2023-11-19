@@ -1,9 +1,9 @@
 import { be_ } from '@ctx-core/object'
 import { van_, van_internals_ } from '../van/index.js'
-/** @typedef {import('van-type-delegate').VanShape}VanShape */
-let van_state_o_ = be_('van_state_o_', ()=>({
+/** @typedef {import('van-type-delegate').VanShape} */
+let van_state_o_ = be_(()=>({
 	curDeps: undefined
-}))
+})).config({ id: 'van_state_o_' })
 export function reactive_state__new(ctx, initVal) {
 	let van = van_(ctx)
 	let state

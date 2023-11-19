@@ -1,12 +1,12 @@
 import { be_, ctx__delete, ctx__set } from '@ctx-core/object'
 import van from 'mini-van-plate/van-plate'
-/** @typedef {import('@ctx-core/object').Be}Be */
-/** @typedef {import('@ctx-core/object').Ctx}Ctx */
-/** @typedef {import('van-type-delegate').State}State */
-/** @typedef {import('van-type-delegate').VanShape}VanShape */
-/** @typedef {import('./index.d.ts').van_internals_T}van_internals_T */
+/** @typedef {import('@ctx-core/object').Be} */
+/** @typedef {import('@ctx-core/object').Ctx} */
+/** @typedef {import('van-type-delegate').State} */
+/** @typedef {import('van-type-delegate').VanShape} */
+/** @typedef {import('./index.d.ts').van_internals_T} */
 /** @type {Be<[VanShape|null]>} */
-export let van_ = be_('van_', null)
+export let van_ = be_(null).config({ id: 'van_' })
 /**
  * @param {Ctx}ctx
  * @param {VanShape}van
@@ -20,7 +20,7 @@ export function van__set(ctx, van) {
  * @returns {van_internals_T}
  * @private
  */
-export let van_internals_ = be_('van_internals_', ()=>{
+export let van_internals_ = be_(()=>{
 	let protoOf = Object.getPrototypeOf, funcProto = protoOf(protoOf), objProto = protoOf({})
 	let stateProto = protoOf(van.state())
 	return {
@@ -43,4 +43,4 @@ export let van_internals_ = be_('van_internals_', ()=>{
 					: v
 		}
 	}
-})
+}).config({ id: 'van_internals_' })

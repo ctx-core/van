@@ -1,5 +1,18 @@
 # @ctx-core/vanjs
 
+## 3.0.0
+
+### Major Changes
+
+- - val**be*derive_pair*,val**be*derive_pair_T,val\_\_be_state_triple*,val\_\_be_state_triple_T
+- be*state_triple*,be*derive_pair*:
+
+      single argument: val__new
+      instantiates a State
+      config delegates to:
+      	.config
+      	.oninit
+
 ## 2.3.19
 
 ### Patch Changes

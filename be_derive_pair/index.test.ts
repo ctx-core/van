@@ -38,7 +38,8 @@ test('be_derive_pair__new|+id|+is_source_|+oninit', ()=>{
 			is_source_: ctx=>!!ctx.get('source')
 		})
 		.oninit((_ctx, num$)=>{
-			equal(_ctx, ctx)
+			if (Array.isArray(_ctx)) equal(_ctx[1], ctx)
+			else equal(_ctx, ctx)
 			num$.custom = 'custom-val'
 		})
 	equal(num$_(ctx).val, 1)

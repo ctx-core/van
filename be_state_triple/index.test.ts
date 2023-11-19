@@ -1,7 +1,7 @@
 import { ctx__new } from '@ctx-core/object'
+import van from 'mini-van-plate/van-plate'
 import { test } from 'uvu'
 import { equal } from 'uvu/assert'
-import van from 'mini-van-plate/van-plate'
 import type { State } from 'van-type-delegate'
 import { be_state_triple__new, van__set } from '../index.js'
 test('be_state_triple__new', ()=>{
@@ -38,7 +38,8 @@ test('be_state_triple__new|+id|+is_source|+oninit', ()=>{
 			is_source_: ctx=>!!ctx.get('source')
 		})
 		.oninit((_ctx, num$)=>{
-			equal(_ctx, ctx)
+			if (Array.isArray(_ctx)) equal(_ctx[1], ctx)
+			else equal(_ctx, ctx)
 			num$.custom = 'custom-val'
 		})
 	equal(num$_([ctx__new(), ctx]).val, 1)

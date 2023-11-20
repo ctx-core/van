@@ -24,14 +24,14 @@ test('van_internals_', ()=>{
 		plainValue: van_internals_(ctx).plainValue,
 	})
 	equal(ctx.has(van_internals_), true)
-	let num$ = van.state(1)
+	const num$ = van.state(1)
 	equal(van_internals_(ctx).plainValue(num$), 1)
-	let div = van.tags.div()
+	const div = van.tags.div()
 	equal(van_internals_(ctx).plainValue(div), div)
 	equal(van_internals_(ctx).plainValue(()=>'el-id', 'id'), 'el-id')
-	let non_binding_fn = ()=>true
+	const non_binding_fn = ()=>true
 	equal(van_internals_(ctx).plainValue(non_binding_fn, 'onclick'), non_binding_fn)
-	let binding_fn = (()=>true) as (()=>boolean)&{ _isBindingFunc:boolean }
+	const binding_fn = (()=>true) as (()=>boolean)&{ _isBindingFunc:boolean }
 	binding_fn._isBindingFunc = true
 	equal(van_internals_(ctx).plainValue(binding_fn, 'onclick'), true)
 	equal(van_internals_(ctx).plainValue('el-id', 'id'), 'el-id')

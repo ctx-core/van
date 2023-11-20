@@ -6,7 +6,7 @@ import van from 'mini-van-plate/van-plate'
 /** @typedef {import('van-type-delegate').VanShape} */
 /** @typedef {import('./index.d.ts').van_internals_T} */
 /** @type {Be<[VanShape|null]>} */
-export let van_ = be_(null).config({ id: 'van_' })
+export let van_ = be_(()=>null, { id: 'van_' })
 /**
  * @param {Ctx}ctx
  * @param {VanShape}van
@@ -43,4 +43,4 @@ export let van_internals_ = be_(()=>{
 					: v
 		}
 	}
-}).config({ id: 'van_internals_' })
+}, { id: 'van_internals_' })

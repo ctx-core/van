@@ -1,28 +1,30 @@
 import { be_ } from '@ctx-core/object'
 import { reactive_state__new } from '../state/index.js'
-/** @typedef {import('../be_/index.d.ts').be__val__new_T} */
+/** @typedef {import('@ctx-core/object').Be} */
+/** @typedef {import('@ctx-core/object').be_config_T} */
+/** @typedef {import('@ctx-core/object').be__val__new_T} */
+/** @typedef {import('van-type-delegate').State}State */
 /** @typedef {import('./index.d.ts').be_state_triple_T} */
 /** @typedef {import('./index.d.ts').be_state_triple__new__arg_a_T} */
 /**
  *
- * @param {be__val__new_T<unknown>}val__new
+ * @param {Be<State>|be__val__new_T<unknown>}be_OR_val__new
+ * @param {be_config_T}[config]
  * @returns {be_state_triple_T}
  * @private
  */
-export function be_state_triple__new(val__new) {
-	let oninit
-	const be_state_triple = [
-		be_(ctx=>{
-			let state = reactive_state__new(ctx, val__new(ctx))
-			oninit?.(ctx, state)
-			return state
-		}),
-		ctx=>be_state_triple[0](ctx).val,
+export function be_state_triple__new(be_OR_val__new, config) {
+	/** @type {Be<State>} */
+	let be =
+		be_OR_val__new.is_be
+			? be_OR_val__new
+			: be_(ctx=>reactive_state__new(ctx, be_OR_val__new(ctx)),
+				config)
+	return [
+		be,
+		ctx=>be(ctx).val,
 		(ctx, val)=>{
-			be_state_triple[0](ctx).val = val
+			be(ctx).val = val
 		},
 	]
-	be_state_triple.config = params=>(be_state_triple[0].config(params), be_state_triple)
-	be_state_triple.oninit = _oninit=>(oninit = _oninit, be_state_triple)
-	return be_state_triple
 }

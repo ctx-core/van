@@ -1,5 +1,11 @@
 # @ctx-core/vanjs
 
+## 3.0.4
+
+### Patch Changes
+
+- @types/jsdom: ^21.1.5 -> ^21.1.6
+
 ## 3.0.3
 
 ### Patch Changes

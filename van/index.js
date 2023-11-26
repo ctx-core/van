@@ -1,10 +1,8 @@
+/// <reference types="ctx-core/object" />
+/// <reference types="van-type-delegate" />
+/// <reference types="./index.d.ts" />
 import { be_, ctx__delete, ctx__set } from '@ctx-core/object'
 import van from 'mini-van-plate/van-plate'
-/** @typedef {import('@ctx-core/object').Be} */
-/** @typedef {import('@ctx-core/object').Ctx} */
-/** @typedef {import('van-type-delegate').State} */
-/** @typedef {import('van-type-delegate').VanShape} */
-/** @typedef {import('./index.d.ts').van_internals_T} */
 /** @type {Be<[VanShape|null]>} */
 export let van_ = be_(()=>null, { id: 'van_' })
 /**

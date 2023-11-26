@@ -1,16 +1,11 @@
 /// <reference lib="dom" />
+/// <reference types="van-type-delegate" />
+/// <reference types="./index.d.ts" />
 const protoOf = Object.getPrototypeOf
 const objProto = protoOf({})
-/** @typedef {import('van-type-delegate').ChildDom} */
-/** @typedef {import('van-type-delegate').Props} */
-/** @typedef {import('van-type-delegate').TagFunc} */
-/** @typedef {import('van-type-delegate').Tags} */
-/** @typedef {import('van-type-delegate').VanShape} */
-/** @typedef {import('./index.d.ts').Tags_props_clean} */
-/** @typedef {import('./index.d.ts').Van_props_clean} */
 /**
  * @param {VanShape}van
- * @returns {VanShape_w_undefined}
+ * @returns {VanShape_props_clean}
  */
 export function props_clean__van__new(van) {
 	/** @type {Proxy<Tags<VanShape>>} */

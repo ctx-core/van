@@ -1,3 +1,4 @@
+/// <reference types="./index.d.ts" />
 import { be_ } from '@ctx-core/object'
 import { van_, van_internals_ } from '../van/index.js'
 /** @typedef {import('van-type-delegate').VanShape} */

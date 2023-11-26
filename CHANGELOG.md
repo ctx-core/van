@@ -1,14 +1,20 @@
 # @ctx-core/vanjs
 
+## 3.0.12
+
+### Patch Changes
+
+- use **proto** instead of Object.setPrototypeOf:
+
+      V_fragment
+      V_raw
+
 ## 3.0.11
 
 ### Patch Changes
 
 - @ctx-core/object: ^31.1.7 -> ^31.1.8
 - @ctx-core/array: ^27.0.26 -> ^27.0.27
-- Updated dependencies
-- Updated dependencies
-- Updated dependencies
 - Updated dependencies
   - @ctx-core/dom@15.1.27
 
@@ -17,7 +23,6 @@
 ### Patch Changes
 
 - tsx: ^4.4.0 -> ^4.5.0
-- Updated dependencies
 - Updated dependencies
   - @ctx-core/array@27.0.26
   - @ctx-core/dom@15.1.26
@@ -42,9 +47,6 @@
 - @ctx-core/array: ^27.0.23 -> ^27.0.24
 - @ctx-core/object: ^31.1.4 -> ^31.1.5
 - Updated dependencies
-- Updated dependencies
-- Updated dependencies
-- Updated dependencies
   - @ctx-core/dom@15.1.24
 
 ## 3.0.7
@@ -54,9 +56,6 @@
 - @ctx-core/array: ^27.0.22 -> ^27.0.23
 - @ctx-core/object: ^31.1.3 -> ^31.1.4
 - Updated dependencies
-- Updated dependencies
-- Updated dependencies
-- Updated dependencies
   - @ctx-core/dom@15.1.23
 
 ## 3.0.6
@@ -64,7 +63,6 @@
 ### Patch Changes
 
 - tsx: ^4.1.4 -> ^4.2.0
-- Updated dependencies
 - Updated dependencies
   - @ctx-core/array@27.0.22
   - @ctx-core/object@31.1.3
@@ -77,9 +75,6 @@
 
 - @ctx-core/object: ^31.1.1 -> ^31.1.2
 - @ctx-core/array: ^27.0.20 -> ^27.0.21
-- Updated dependencies
-- Updated dependencies
-- Updated dependencies
 - Updated dependencies
   - @ctx-core/dom@15.1.21
 
@@ -96,9 +91,6 @@
 - @ctx-core/array: ^27.0.19 -> ^27.0.20
 - @ctx-core/object: ^31.1.0 -> ^31.1.1
 - Updated dependencies
-- Updated dependencies
-- Updated dependencies
-- Updated dependencies
   - @ctx-core/dom@15.1.20
 
 ## 3.0.2
@@ -106,7 +98,6 @@
 ### Patch Changes
 
 - @ctx-core/object: ^31.0.1 -> ^31.1.0
-- Updated dependencies
 - Updated dependencies
   - @ctx-core/array@27.0.19
   - @ctx-core/dom@15.1.19
@@ -140,11 +131,6 @@
 ### Patch Changes
 
 - Updated dependencies
-- Updated dependencies
-- Updated dependencies
-- Updated dependencies
-- Updated dependencies
-- Updated dependencies
   - @ctx-core/object@31.0.0
   - @ctx-core/array@27.0.17
   - @ctx-core/dom@15.1.17
@@ -156,9 +142,6 @@
 - @ctx-core/array: ^27.0.15 -> ^27.0.16
 - @ctx-core/object: ^30.4.7 -> ^30.4.8
 - Updated dependencies
-- Updated dependencies
-- Updated dependencies
-- Updated dependencies
   - @ctx-core/dom@15.1.16
 
 ## 2.3.17
@@ -167,9 +150,6 @@
 
 - @ctx-core/object: ^30.4.6 -> ^30.4.7
 - @ctx-core/array: ^27.0.14 -> ^27.0.15
-- Updated dependencies
-- Updated dependencies
-- Updated dependencies
 - Updated dependencies
   - @ctx-core/dom@15.1.15
 
@@ -180,9 +160,6 @@
 - @ctx-core/array: ^27.0.13 -> ^27.0.14
 - @ctx-core/object: ^30.4.5 -> ^30.4.6
 - Updated dependencies
-- Updated dependencies
-- Updated dependencies
-- Updated dependencies
   - @ctx-core/dom@15.1.14
 
 ## 2.3.15
@@ -192,9 +169,6 @@
 - @ctx-core/array: ^27.0.12 -> ^27.0.13
 - @ctx-core/object: ^30.4.4 -> ^30.4.5
 - Updated dependencies
-- Updated dependencies
-- Updated dependencies
-- Updated dependencies
   - @ctx-core/dom@15.1.13
 
 ## 2.3.14
@@ -203,9 +177,6 @@
 
 - @ctx-core/object: ^30.4.3 -> ^30.4.4
 - @ctx-core/array: ^27.0.11 -> ^27.0.12
-- Updated dependencies
-- Updated dependencies
-- Updated dependencies
 - Updated dependencies
   - @ctx-core/dom@15.1.12
 
@@ -225,9 +196,6 @@
 
 - @ctx-core/array: ^27.0.9 -> ^27.0.10
 - @ctx-core/object: ^30.4.1 -> ^30.4.2
-- Updated dependencies
-- Updated dependencies
-- Updated dependencies
 - Updated dependencies
   - @ctx-core/dom@15.1.10
 
@@ -268,9 +236,6 @@
 - @ctx-core/array: ^27.0.6 -> ^27.0.7
 - @ctx-core/object: ^30.3.0 -> ^30.3.1
 - Updated dependencies
-- Updated dependencies
-- Updated dependencies
-- Updated dependencies
   - @ctx-core/dom@15.1.7
 
 ## 2.3.7
@@ -278,9 +243,6 @@
 ### Patch Changes
 
 - @ctx-core/object: ^30.2.0 -> ^30.3.0
-- Updated dependencies
-- Updated dependencies
-- Updated dependencies
 - Updated dependencies
   - @ctx-core/dom@15.1.6
   - @ctx-core/array@27.0.6
@@ -359,9 +321,6 @@
 ### Patch Changes
 
 - package.json: - "svelte": "./src/index.js"
-- Updated dependencies
-- Updated dependencies
-- Updated dependencies
 - Updated dependencies
   - @ctx-core/array@27.0.0
   - @ctx-core/dom@15.1.0

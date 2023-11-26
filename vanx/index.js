@@ -1,7 +1,6 @@
+/// <reference types="ctx-core/object" />
+/// <reference types="./index.d.ts" />
 import { be_, ctx__set } from '@ctx-core/object'
-/** @typedef {import('@ctx-core/object').Be} */
-/** @typedef {import('@ctx-core/object').Ctx} */
-/** @typedef {import('./index.d.ts').vanx_T} */
 /** @type {Be<vanx_T|null>} */
 export const vanx_ = be_(
 	()=>null,

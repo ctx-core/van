@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/vanjs",
-	"version": "3.0.25",
+	"version": "3.0.26",
 	"description": "ctx-core extensions for VanJS",
 	"keywords": [
 		"ctx-core",
@@ -50,7 +50,7 @@
 	},
 	"dependencies": {
 		"@ctx-core/array": "^27.1.0",
-		"@ctx-core/dom": "15.1.39",
+		"@ctx-core/dom": "15.1.40",
 		"@ctx-core/object": "^31.1.20",
 		"van-type-delegate": "1.2.10",
 		"vanjs-ext": "^0.1.3"

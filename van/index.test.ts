@@ -13,7 +13,7 @@ test('van_internals_', ()=>{
 	const ctx = ctx__new()
 	equal(van_(ctx), null)
 	van__set(ctx, van)
-	equal(ctx.has(van_internals_), false)
+	equal(ctx.has(van_internals_.id), false)
 	equal(van_internals_(ctx), {
 		protoOf: Object.getPrototypeOf,
 		funcProto: Object.getPrototypeOf(()=>{
@@ -23,7 +23,7 @@ test('van_internals_', ()=>{
 		stateProto: Object.getPrototypeOf(van.state(null)),
 		plainValue: van_internals_(ctx).plainValue,
 	})
-	equal(ctx.has(van_internals_), true)
+	equal(ctx.has(van_internals_.id), true)
 	const num$ = van.state(1)
 	equal(van_internals_(ctx).plainValue(num$), 1)
 	const div = van.tags.div()
@@ -36,7 +36,7 @@ test('van_internals_', ()=>{
 	equal(van_internals_(ctx).plainValue(binding_fn, 'onclick'), true)
 	equal(van_internals_(ctx).plainValue('el-id', 'id'), 'el-id')
 	van__set(ctx, van)
-	equal(ctx.has(van_internals_), false)
+	equal(ctx.has(van_internals_.id), false)
 	equal(van_internals_(ctx), {
 		protoOf: Object.getPrototypeOf,
 		funcProto: Object.getPrototypeOf(()=>{
@@ -46,6 +46,6 @@ test('van_internals_', ()=>{
 		stateProto: Object.getPrototypeOf(van.state(null)),
 		plainValue: van_internals_(ctx).plainValue,
 	})
-	equal(ctx.has(van_internals_), true)
+	equal(ctx.has(van_internals_.id), true)
 })
 test.run()

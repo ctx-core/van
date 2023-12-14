@@ -1,5 +1,12 @@
 # @ctx-core/vanjs
 
+## 3.0.42
+
+### Patch Changes
+
+- Updated dependencies
+  - van-type-delegate@1.2.11
+
 ## 3.0.41
 
 ### Patch Changes

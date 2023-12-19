@@ -1,5 +1,25 @@
 # @ctx-core/vanjs
 
+## 4.0.0
+
+### Major Changes
+
+- major: Ctx: + ns:
+
+      be_derive_pair__new:
+      be_derive_pair_T:
+      be_state_triple__new:
+      be_state_triple_T:
+      	generics: + ns_T
+      + ∋ ctx-core
+      - ∋ @ctx-core/array
+      - ∋ @ctx-core/object
+
+### Patch Changes
+
+- Updated dependencies
+  - ctx-core@5.0.0
+
 ## 3.0.43
 
 ### Patch Changes

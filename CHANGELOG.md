@@ -1,5 +1,11 @@
 # @ctx-core/vanjs
 
+## 4.0.4
+
+### Patch Changes
+
+- ctx-core: ^5.0.1 -> ^5.0.2
+
 ## 4.0.3
 
 ### Patch Changes

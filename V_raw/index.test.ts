@@ -1,4 +1,4 @@
-import { ctx__new } from '@ctx-core/object'
+import { ctx__new } from 'ctx-core/be'
 import van from 'mini-van-plate/van-plate'
 import { test } from 'uvu'
 import { equal } from 'uvu/assert'

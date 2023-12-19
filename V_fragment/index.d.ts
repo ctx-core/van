@@ -1,4 +1,4 @@
-import type { Ctx } from '@ctx-core/object'
+import type { Ctx } from 'ctx-core/be'
 import type { ChildDom, PlateElement, PlateVan, VanShape } from 'van-type-delegate'
 export function V_fragment<
 	V extends VanShape,

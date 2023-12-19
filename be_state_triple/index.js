@@ -1,7 +1,7 @@
-/// <reference types="ctx-core/object" />
+/// <reference types="ctx-core" />
 /// <reference types="van-type-delegate" />
 /// <reference types="./index.d.ts" />
-import { be_ } from '@ctx-core/object'
+import { be_ } from 'ctx-core/be'
 import { reactive_state__new } from '../state/index.js'
 /** @typedef {import('van-type-delegate').State}State */
 /**

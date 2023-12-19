@@ -1,7 +1,7 @@
+/// <reference types="van-type-delegate" />
 /// <reference types="./index.d.ts" />
-import { be_ } from '@ctx-core/object'
+import { be_ } from 'ctx-core/be'
 import { van_, van_internals_ } from '../van/index.js'
-/** @typedef {import('van-type-delegate').VanShape} */
 let van_state_o_ = be_(()=>({
 	curDeps: undefined
 }), { id: 'van_state_o_' })
@@ -73,5 +73,5 @@ export function reactive_derive__new(ctx, f, s = reactive_state__new(ctx), dom) 
  * @private
  */
 function is_van_core_(van) {
-	return !!van.hydrate
+	return !!van?.hydrate
 }

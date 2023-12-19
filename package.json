@@ -49,9 +49,8 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
-		"@ctx-core/array": "^27.1.13",
 		"@ctx-core/dom": "15.1.56",
-		"@ctx-core/object": "^31.1.33",
+		"ctx-core": "^4.19.0",
 		"van-type-delegate": "1.2.11",
 		"vanjs-ext": "^0.1.3"
 	},

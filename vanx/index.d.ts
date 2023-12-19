@@ -1,4 +1,4 @@
-import type { Be, Ctx } from '@ctx-core/object'
+import type { Be, Ctx } from 'ctx-core/be'
 import type { State } from 'van-type-delegate'
 import type { DeReactive, Reactive, ReactiveObj, ReplaceFunc, StateOf, ValueType } from 'vanjs-ext'
 export declare const vanx_:Be<vanx_T|null>

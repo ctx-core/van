@@ -1,4 +1,4 @@
-import type { Be, Ctx } from '@ctx-core/object'
+import type { Be, Ctx } from 'ctx-core/be'
 import type { ChildDom, VanShape } from 'van-type-delegate'
 export declare function van_<
 	van_T extends VanShape = VanShape,
@@ -11,10 +11,10 @@ export declare function van__set<
 export declare const van_internals_:Be<VanShape>
 export interface van_internals_T<van_T extends VanShape> {
 	protoOf:typeof Object.getPrototypeOf
-	funcProto:Function
-	objProto:Object
+	funcProto:typeof Function['prototype']
+	objProto:object
 	elementProto:van__elementProto_T
-	stateProto:Object
+	stateProto:object
 	plainValue(v:Exclude<ChildDom<van_T>, null|undefined>, k?:string):ChildDom<van_T>
 }
 export interface van__elementProto_T {

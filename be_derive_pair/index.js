@@ -1,6 +1,6 @@
 /// <reference types="../be_/index.d.ts" />
 /// <reference types="./index.d.ts" />
-import { be_ } from '@ctx-core/object'
+import { be_ } from 'ctx-core/be'
 import { reactive_derive__new } from '../state/index.js'
 /**
  * @param {Be<State>|be__val__new_T<unknown>}be_OR_val__new

@@ -1,4 +1,4 @@
-import { ctx__new } from '@ctx-core/object'
+import { ctx__new } from 'ctx-core/be'
 import { JSDOM } from 'jsdom'
 import plate_van from 'mini-van-plate/van-plate'
 import { test } from 'uvu'

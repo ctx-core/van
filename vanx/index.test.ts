@@ -1,4 +1,4 @@
-import { ctx__new } from '@ctx-core/object'
+import { ctx__new } from 'ctx-core/be'
 import { test } from 'uvu'
 import { equal } from 'uvu/assert'
 import { vanx_, vanx__set, type vanx_T } from '../index.js'

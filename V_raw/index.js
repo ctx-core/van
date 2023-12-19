@@ -1,8 +1,8 @@
+/// <reference types="ctx-core" />
+/// <reference types="van-type-delegate" />
 /// <reference types="./index.d.ts" />
 import { html__fragment_ } from '@ctx-core/dom'
 import { van_internals_ } from '../van/index.js'
-/** @typedef {import('@ctx-core/object').Ctx} */
-/** @typedef {import('van-type-delegate').PlateElement} */
 /**
  * @param {{ ctx:Ctx }|Ctx}props_OR_ctx
  * @param {string}html

@@ -1,9 +1,9 @@
+/// <reference types="ctx-core" />
+/// <reference types="van-type-delegate" />
 /// <reference types="./index.d.ts" />
-import { compact } from '@ctx-core/array'
 import { fragment_ } from '@ctx-core/dom'
+import { compact } from 'ctx-core/array'
 import { van_, van_internals_ } from '../van/index.js'
-/** @typedef {import('@ctx-core/object').Ctx} */
-/** @typedef {import('van-type-delegate').ChildDom} */
 /**
  * @param {{ ctx:Ctx }|Ctx}props_OR_ctx
  * @param {ChildDom[]}_children

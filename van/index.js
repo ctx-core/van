@@ -1,7 +1,7 @@
-/// <reference types="ctx-core/object" />
+/// <reference types="ctx-core" />
 /// <reference types="van-type-delegate" />
 /// <reference types="./index.d.ts" />
-import { be_, ctx__delete, ctx__set } from '@ctx-core/object'
+import { be_, ctx__delete, ctx__set } from 'ctx-core/be'
 import van from 'mini-van-plate/van-plate'
 /** @type {Be<[VanShape|null]>} */
 export let van_ = be_(()=>null, { id: 'van_' })

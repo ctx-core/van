@@ -1,5 +1,5 @@
 /// <reference types="./index.d.ts" />
-import { be_ } from '@ctx-core/object'
+import { be_ } from 'ctx-core/be'
 import { props_clean__tags__new } from '../props_clean/index.js'
 import { van_ } from '../van/index.js'
 export const S_ = be_(ctx=>{

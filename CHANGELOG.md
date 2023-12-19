@@ -1,5 +1,16 @@
 # @ctx-core/vanjs
 
+## 4.0.6
+
+### Patch Changes
+
+- tsx: ^4.6.2 -> ^4.7.0
+- ctx-core: ^5.0.2 -> ^5.1.0
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/dom@15.1.60
+  - van-type-delegate@1.2.12
+
 ## 4.0.5
 
 ### Patch Changes

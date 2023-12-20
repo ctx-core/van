@@ -23,12 +23,11 @@ test('be_state_triple__new', ()=>{
 	num__set(ctx, 5)
 	equal(num$_(ctx).val, 5)
 	equal(num_(ctx), 5)
-	equal(ctx.s[''].get(num$_), num$_(ctx))
+	equal(ctx.s[''].get(num$_)![0], num$_(ctx))
 })
 test('be_state_triple__new|+id|+ns', ()=>{
 	const ctx0 = ctx__new()
 	const ctx1 = ns_ctx__new('test_ns')
-	ctx1.s.test_ns.set('ns', true)
 	const ctx = ns_ctx__new(ctx0, ctx1)
 	van__set(ctx, van)
 	const [
@@ -52,12 +51,11 @@ test('be_state_triple__new|+id|+ns', ()=>{
 	equal(num_(ctx), 5)
 	equal(ctx0.s[''].get('num'), undefined)
 	equal('test_ns' in ctx0.s, false)
-	equal(ctx1.s.test_ns.get('num'), num$_(ctx))
+	equal(ctx1.s.test_ns.get('num')![0], num$_(ctx))
 })
 test('be_state_triple__new|be', ()=>{
 	const ctx0 = ctx__new()
 	const ctx1 = ns_ctx__new('test_ns')
-	ctx1.s.test_ns.set('ns', true)
 	const ctx = ns_ctx__new(ctx0, ctx1)
 	van__set(ctx, van)
 	const [
@@ -88,7 +86,7 @@ test('be_state_triple__new|be', ()=>{
 	equal(num_(ctx), 5)
 	equal(ctx0.s[''].get('num'), undefined)
 	equal('test_ns' in ctx0.s, false)
-	equal(ctx1.s.test_ns.get('num'), num$_(ctx))
+	equal(ctx1.s.test_ns.get('num')![0], num$_(ctx))
 	equal(num$_(ctx).custom, 'custom-val')
 	equal(num$_(ctx).custom, 'custom-val')
 })

@@ -1,5 +1,13 @@
 # @ctx-core/vanjs
 
+## 4.0.13
+
+### Patch Changes
+
+- ctx-core: ^5.3.1 -> ^5.4.0
+- Updated dependencies
+  - @ctx-core/dom@15.1.67
+
 ## 4.0.12
 
 ### Patch Changes

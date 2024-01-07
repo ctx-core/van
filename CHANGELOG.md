@@ -1,5 +1,11 @@
 # @ctx-core/vanjs
 
+## 4.0.26
+
+### Patch Changes
+
+- jsdom: ^23.1.0 -> ^23.2.0
+
 ## 4.0.25
 
 ### Patch Changes

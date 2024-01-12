@@ -27,6 +27,7 @@ export function reactive_state__new(ctx, initVal) {
 			},
 			set val(v) {
 				// Aliasing `this` to reduce the bundle size.
+				// eslint-disable-next-line @typescript-eslint/no-this-alias
 				let s = this
 				if (v !== s._val) {
 					s._val = v

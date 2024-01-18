@@ -1,5 +1,13 @@
 # @ctx-core/vanjs
 
+## 4.0.53
+
+### Patch Changes
+
+- be_state_triple**new,be_derive_pair**new: arguments: config:
+
+      required when ns is defined
+
 ## 4.0.52
 
 ### Patch Changes

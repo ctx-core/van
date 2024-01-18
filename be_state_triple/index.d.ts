@@ -1,13 +1,4 @@
-import type {
-	Be,
-	be__val__new_T,
-	be_config_T,
-	Ctx,
-	ctx__be_T,
-	ctx__get_T,
-	ctx__set_T,
-	Ctx_wide_T
-} from 'ctx-core/be'
+import type { Be, be__val__new_T, be_config_T, ctx__be_T, ctx__get_T, ctx__set_T, Ctx_wide_T } from 'ctx-core/be'
 import type { State } from 'van-type-delegate'
 export declare function be_state_triple__new<
 	val_T,

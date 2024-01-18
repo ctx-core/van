@@ -1,5 +1,11 @@
 # @ctx-core/vanjs
 
+## 4.0.52
+
+### Patch Changes
+
+- fix: type errors
+
 ## 4.0.51
 
 ### Patch Changes

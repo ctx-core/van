@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/vanjs",
-	"version": "4.0.57",
+	"version": "4.0.58",
 	"description": "ctx-core extensions for VanJS",
 	"keywords": [
 		"ctx-core",
@@ -58,7 +58,7 @@
 		"@types/jsdom": "^21.1.6",
 		"c8": "^9.1.0",
 		"check-dts": "^0.7.2",
-		"jsdom": "^23.2.0",
+		"jsdom": "^24.0.0",
 		"mini-van-plate": "^0.5.4-perf.0",
 		"tsx": "^4.7.0",
 		"typescript": "next",

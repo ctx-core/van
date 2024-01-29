@@ -17,7 +17,7 @@ test('V_fragment|browser', async ()=>{
 	const jsdom = new JSDOM()
 	const { window, document } = jsdom.window
 	const prev__window = globalThis['window']
-	globalThis['window'] = window as any
+	globalThis['window'] = window as never
 	const prev__document = globalThis['document']
 	globalThis['document'] = document
 	const mini_van = await import('mini-van-plate').then(mod=>mod.default)

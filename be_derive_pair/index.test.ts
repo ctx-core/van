@@ -43,7 +43,7 @@ test('be_derive_pair__new|+id|+ns', ()=>{
 	const [
 		num$_,
 		num_,
-	] = be_derive_pair__new(ctx=>{
+	] = be_derive_pair__new<number, 'test_ns'>(ctx=>{
 		/* eslint-disable @typescript-eslint/no-unused-vars */
 		type test_ctx = Expect<Equal<typeof ctx, wide_ctx_T<'test_ns'>>>
 		/* eslint-enable @typescript-eslint/no-unused-vars */
@@ -76,7 +76,7 @@ test('be_derive_pair__new|be', ()=>{
 	const [
 		num$_,
 		num_,
-	] = be_derive_pair__new(
+	] = be_derive_pair__new<number, 'test_ns'>(
 		be_(ctx=>{
 			/* eslint-disable @typescript-eslint/no-unused-vars */
 			type test_ctx = Expect<Equal<typeof ctx, wide_ctx_T<'test_ns'>>>

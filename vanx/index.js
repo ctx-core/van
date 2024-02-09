@@ -6,7 +6,7 @@ export const vanx_ = be_(
 	()=>null,
 	{ id: 'vanx_' })
 /**
- * @param {Ctx}ctx
+ * @param {ctx_T}ctx
  * @param {vanx_T}vanx
  */
 export function vanx__set(ctx, vanx) {

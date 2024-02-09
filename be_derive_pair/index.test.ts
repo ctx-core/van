@@ -1,4 +1,4 @@
-import { be_, ctx__new, type Ctx_wide_T, ns_ctx__new } from 'ctx-core/be'
+import { be_, ctx__new, type wide_ctx_T, ns_ctx__new } from 'ctx-core/be'
 import type { Equal, Expect } from 'ctx-core/test'
 import van from 'mini-van-plate/van-plate'
 import { test } from 'uvu'
@@ -17,7 +17,7 @@ test('be_derive_pair__new', ()=>{
 		num_
 	] = be_derive_pair__new(ctx=>{
 		/* eslint-disable @typescript-eslint/no-unused-vars */
-		type test_ctx = Expect<Equal<typeof ctx, Ctx_wide_T<''>>>
+		type test_ctx = Expect<Equal<typeof ctx, wide_ctx_T<''>>>
 		/* eslint-enable @typescript-eslint/no-unused-vars */
 		return base_(ctx) + 1
 	})
@@ -45,7 +45,7 @@ test('be_derive_pair__new|+id|+ns', ()=>{
 		num_,
 	] = be_derive_pair__new(ctx=>{
 		/* eslint-disable @typescript-eslint/no-unused-vars */
-		type test_ctx = Expect<Equal<typeof ctx, Ctx_wide_T<'test_ns'>>>
+		type test_ctx = Expect<Equal<typeof ctx, wide_ctx_T<'test_ns'>>>
 		/* eslint-enable @typescript-eslint/no-unused-vars */
 		return base_(ctx) + 1
 	}, { id: 'num', ns: 'test_ns' })
@@ -79,7 +79,7 @@ test('be_derive_pair__new|be', ()=>{
 	] = be_derive_pair__new(
 		be_(ctx=>{
 			/* eslint-disable @typescript-eslint/no-unused-vars */
-			type test_ctx = Expect<Equal<typeof ctx, Ctx_wide_T<'test_ns'>>>
+			type test_ctx = Expect<Equal<typeof ctx, wide_ctx_T<'test_ns'>>>
 			/* eslint-enable @typescript-eslint/no-unused-vars */
 			const num$ = reactive_derive__new(ctx, ()=>
 				base_(ctx) + 1)

@@ -1,8 +1,8 @@
-import type { Be, Ctx } from 'ctx-core/be'
+import type { Be, ctx_T } from 'ctx-core/be'
 import type { State } from 'van-type-delegate'
 import type { DeReactive, Reactive, ReactiveObj, ReplaceFunc, StateOf, ValueType } from 'vanjs-ext'
 export declare const vanx_:Be<vanx_T|null>
-export declare function vanx__set(ctx:Ctx, vanx:vanx_T):void
+export declare function vanx__set(ctx:ctx_T, vanx:vanx_T):void
 export interface vanx_T {
 	calc:<R>(f:()=>R)=>R
 	reactive:<T extends object>(obj:T)=>Reactive<T>

@@ -6,7 +6,7 @@ import van from 'mini-van-plate/van-plate'
 /** @type {Be<[VanShape|null]>} */
 export let van_ = be_(()=>null, { id: 'van_' })
 /**
- * @param {Ctx}ctx
+ * @param {ctx_T}ctx
  * @param {VanShape}van
  */
 export function van__set(ctx, van) {
@@ -14,7 +14,7 @@ export function van__set(ctx, van) {
 	ctx__delete(ctx, van_internals_)
 }
 /**
- * @param {Ctx}ctx
+ * @param {ctx_T}ctx
  * @returns {van_internals_T}
  * @private
  */

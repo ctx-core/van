@@ -5,7 +5,7 @@ import { fragment_ } from '@ctx-core/dom'
 import { compact } from 'ctx-core/array'
 import { van_, van_internals_ } from '../van/index.js'
 /**
- * @param {{ ctx:Ctx }|Ctx}props_OR_ctx
+ * @param {{ ctx:ctx_T }|ctx_T}props_OR_ctx
  * @param {ChildDom[]}_children
  * @returns {DocumentFragment|any}
  * @constructor

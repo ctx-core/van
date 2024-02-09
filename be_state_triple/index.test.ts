@@ -1,4 +1,4 @@
-import { be_, ctx__new, type Ctx_wide_T, ns_ctx__new } from 'ctx-core/be'
+import { be_, ctx__new, type wide_ctx_T, ns_ctx__new } from 'ctx-core/be'
 import type { Equal, Expect } from 'ctx-core/test'
 import van from 'mini-van-plate/van-plate'
 import { test } from 'uvu'
@@ -14,7 +14,7 @@ test('be_state_triple__new', ()=>{
 		num__set,
 	] = be_state_triple__new(ctx=>{
 		/* eslint-disable @typescript-eslint/no-unused-vars */
-		type test_ctx = Expect<Equal<typeof ctx, Ctx_wide_T<''>>>
+		type test_ctx = Expect<Equal<typeof ctx, wide_ctx_T<''>>>
 		/* eslint-enable @typescript-eslint/no-unused-vars */
 		return 1
 	})
@@ -36,7 +36,7 @@ test('be_state_triple__new|+id|+ns', ()=>{
 		num__set,
 	] = be_state_triple__new(ctx=>{
 		/* eslint-disable @typescript-eslint/no-unused-vars */
-		type test_ctx = Expect<Equal<typeof ctx, Ctx_wide_T<'test_ns'>>>
+		type test_ctx = Expect<Equal<typeof ctx, wide_ctx_T<'test_ns'>>>
 		/* eslint-enable @typescript-eslint/no-unused-vars */
 		return 1
 	}, { id: 'num', ns: 'test_ns' })
@@ -64,7 +64,7 @@ test('be_state_triple__new|be', ()=>{
 		num__set,
 	] = be_state_triple__new(be_(ctx=>{
 		/* eslint-disable @typescript-eslint/no-unused-vars */
-		type test_ctx = Expect<Equal<typeof ctx, Ctx_wide_T<'test_ns'>>>
+		type test_ctx = Expect<Equal<typeof ctx, wide_ctx_T<'test_ns'>>>
 		/* eslint-enable @typescript-eslint/no-unused-vars */
 		const num$ = reactive_state__new(ctx, 1) as custom_T
 		num$.custom = 'custom-val'

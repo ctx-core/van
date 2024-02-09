@@ -1,12 +1,14 @@
-import type { Be, Ctx } from 'ctx-core/be'
+import type { Be, wide_ctx_T } from 'ctx-core/be'
 import type { ChildDom, VanShape } from 'van-type-delegate'
 export declare function van_<
 	van_T extends VanShape = VanShape,
-	ctx_T extends Ctx = Ctx
+	ns_T extends string = '',
+	ctx_T extends wide_ctx_T<ns_T> = wide_ctx_T<ns_T>
 >(ctx:ctx_T):van_T
 export declare function van__set<
 	van_T extends VanShape,
-	ctx_T extends Ctx = Ctx
+	ns_T extends string = '',
+	ctx_T extends wide_ctx_T<ns_T> = wide_ctx_T<ns_T>
 >(ctx:ctx_T, van:van_T):void
 export declare const van_internals_:Be<VanShape>
 export interface van_internals_T<van_T extends VanShape> {

@@ -4,7 +4,7 @@
 import { html__fragment_ } from '@ctx-core/dom'
 import { van_internals_ } from '../van/index.js'
 /**
- * @param {{ ctx:Ctx }|Ctx}props_OR_ctx
+ * @param {{ ctx:ctx_T }|ctx_T}props_OR_ctx
  * @param {string}html
  * @returns {DocumentFragment|PlateElement}
  * @constructor

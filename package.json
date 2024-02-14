@@ -46,7 +46,7 @@
 		"prepublishOnly": "pnpm clean && pnpm build && pnpm test",
 		"test": "pnpm test:unit ###enable when https://github.com/vanjs-org/mini-van/issues/9 is fixed### && check-dts",
 		"test:unit": "tsx node_modules/uvu/bin.js . '\\.test\\.(ts|js)$'",
-		"test:unit:coverage": "c8 pnpm test:unit"
+		"disable:test:unit:coverage": "c8 pnpm test:unit"
 	},
 	"dependencies": {
 		"@ctx-core/dom": "15.3.32",

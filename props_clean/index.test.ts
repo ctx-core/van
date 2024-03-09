@@ -11,10 +11,6 @@ test('props_clean__van__new|html|removes nullish props', ()=>{
 		onclick: null,
 		onhover: 'onhover(this)'
 	}, 'Content')! as PlateElement
-	// const div = van.tags.div({
-	// 	id: 'test-el',
-	// 	onhover: 'onhover(this)'
-	// }, 'Content')
 	equal(div.render(), `<div id="test-el" onhover="onhover(this)">Content</div>`)
 })
 test('props_clean__van__new|svg|removes nullish props', ()=>{

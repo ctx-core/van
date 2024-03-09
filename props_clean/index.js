@@ -10,8 +10,6 @@ const objProto = protoOf({})
 export function props_clean__van__new(van) {
 	/** @type {Proxy<Tags<VanShape>>} */
 	let props_clean__tags = props_clean__tags__new(van.tags)
-	let { tagsNS } = van
-	let props_clean__tagsNS = name=>props_clean__tags__new(tagsNS(name))
 	/** @type {Van_w_undefined} */
 	return new Proxy(van, {
 		get(target, p, receiver) {
@@ -20,9 +18,7 @@ export function props_clean__van__new(van) {
 					? props_clean
 					: p === 'tags'
 						? props_clean__tags
-						: p === 'tagsNS'
-							? props_clean__tagsNS
-							: Reflect.get(target, p, receiver)
+						: Reflect.get(target, p, receiver)
 			)
 		}
 	})
@@ -32,23 +28,26 @@ export function props_clean__van__new(van) {
  * @returns {Tags_props_clean}
  */
 export function props_clean__tags__new(tags) {
-	return new Proxy(tags, {
-		get(target, p, receiver) {
-			/** @type {TagFunc} */
-			const tag = Reflect.get(target, p, receiver)
-			if (!tag) return tag
-			/** @type {TagFunc} */
-			return ((...args)=>{
-				/** @type {[Props, ...ChildDom[]} */
-				let [
-					props,
-					...children
-				] = protoOf(args[0] ?? 0) === objProto ? args : [{}, ...args]
-				const clean__props = props_clean(props)
-				return tag(clean__props, ...children)
-			})
-		}
-	})
+	return proxy_(ns=>proxy_(tags(ns)))
+	function proxy_(_) {
+		return new Proxy(_, {
+			get(target, p, receiver) {
+				/** @type {TagFunc} */
+				const tag = Reflect.get(target, p, receiver) ?? Reflect.get(tags, p, receiver)
+				if (!tag) return tag
+				/** @type {TagFunc} */
+				return ((...args)=>{
+					/** @type {[Props, ...ChildDom[]} */
+					let [
+						props,
+						...children
+					] = protoOf(args[0] ?? 0) === objProto ? args : [{}, ...args]
+					const clean__props = props_clean(props)
+					return tag(clean__props, ...children)
+				})
+			}
+		})
+	}
 }
 /**
  * @param {Props}props

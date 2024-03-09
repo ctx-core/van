@@ -14,7 +14,6 @@ export type TagNS_props_clean<van_T extends VanShape> =
 export type Van_props_clean<van_T extends VanShape> = {
 	props_clean:typeof props_clean
 	tags:Tags_props_clean<van_T>
-	tagsNS:TagNS_props_clean<van_T>
 }&van_T
 export type VanShape_props_clean<van_T extends VanShape> =
 	van_T extends CoreVan

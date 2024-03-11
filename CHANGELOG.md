@@ -1,5 +1,14 @@
 # @ctx-core/vanjs
 
+## 4.0.118
+
+### Patch Changes
+
+- vanjs-ext: ^0.2.5 -> ^0.2.6
+- mini-van-plate: ^0.5.5 -> ^0.5.6
+- Updated dependencies
+  - van-type-delegate@1.3.3
+
 ## 4.0.117
 
 ### Patch Changes

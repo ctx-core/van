@@ -1,5 +1,11 @@
 # @ctx-core/vanjs
 
+## 4.0.127
+
+### Patch Changes
+
+- vanjs-ext: ^0.3.0 -> ^0.4.0-rc.0
+
 ## 4.0.126
 
 ### Patch Changes

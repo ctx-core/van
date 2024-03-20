@@ -1,5 +1,15 @@
 # @ctx-core/vanjs
 
+## 4.0.129
+
+### Patch Changes
+
+- package.json: author: url,email
+- Updated dependencies
+  - ctx-core@6.6.1
+  - @ctx-core/dom@15.3.53
+  - van-type-delegate@1.3.5
+
 ## 4.0.128
 
 ### Patch Changes

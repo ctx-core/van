@@ -26,3 +26,28 @@ export function be_state_triple__new(be_OR_val__new, config) {
 		},
 	]
 }
+/**
+ * @param {string}id
+ * @param {be__val__new_T<unknown>}val__new
+ * @returns {be_state_triple_T}
+ */
+export function id_be_state_triple__new(id, val__new) {
+	return be_state_triple__new(val__new, { id })
+}
+/**
+ * @param {string}ns
+ * @param {be__val__new_T<unknown>}val__new
+ * @returns {be_state_triple_T}
+ */
+export function ns_be_state_triple__new(ns, val__new) {
+	return be_state_triple__new(val__new, { ns })
+}
+/**
+ * @param {string}ns
+ * @param {string}id
+ * @param {be__val__new_T<unknown>}val__new
+ * @returns {be_state_triple_T}
+ */
+export function ns_id_be_state_triple__new(ns, id, val__new) {
+	return be_state_triple__new(val__new, { ns, id })
+}

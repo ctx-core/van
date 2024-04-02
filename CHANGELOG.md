@@ -1,5 +1,20 @@
 # @ctx-core/vanjs
 
+## 5.0.0
+
+### Major Changes
+
+- major:
+
+      be_derive_pair__new: - config argument
+      be_state_triple__new: - config argument
+      + id_be_derive_pair__new
+      + ns_be_derive_pair__new
+      + ns_id_be_derive_pair__new
+      + id_be_state_triple__new
+      + ns_be_state_triple__new
+      + ns_id_be_state_triple__new
+
 ## 4.0.141
 
 ### Patch Changes

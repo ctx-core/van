@@ -23,3 +23,28 @@ export function be_derive_pair__new(be_OR_val__new, config) {
 		ctx=>be(ctx).val,
 	]
 }
+/**
+ * @param {string}id
+ * @param {be__val__new_T<unknown>}val__new
+ * @returns {be_derive_pair_T}
+ */
+export function id_be_derive_pair__new(id, val__new) {
+	return be_derive_pair__new(val__new, { id })
+}
+/**
+ * @param {string}ns
+ * @param {be__val__new_T<unknown>}val__new
+ * @returns {be_derive_pair_T}
+ */
+export function ns_be_derive_pair__new(ns, val__new) {
+	return be_derive_pair__new(val__new, { ns })
+}
+/**
+ * @param {string}ns
+ * @param {string}id
+ * @param {be__val__new_T<unknown>}val__new
+ * @returns {be_derive_pair_T}
+ */
+export function ns_id_be_derive_pair__new(ns, id, val__new) {
+	return be_derive_pair__new(val__new, { ns, id })
+}

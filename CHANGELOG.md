@@ -1,5 +1,13 @@
 # @ctx-core/vanjs
 
+## 5.0.36
+
+### Patch Changes
+
+- mini-van-plate: ^0.5.7 -> ^0.6.0-rc.0
+- Updated dependencies
+  - van-type-delegate@1.3.7
+
 ## 5.0.35
 
 ### Patch Changes

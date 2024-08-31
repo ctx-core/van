@@ -1,5 +1,18 @@
 # @ctx-core/vanjs
 
+## 5.0.41
+
+### Patch Changes
+
+- vanjs-ext: ^0.6.0 -> ^0.6.1
+- jsdom: ^24.1.1 -> ^25.0.0
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - ctx-core@7.2.31
+  - van-type-delegate@1.3.9
+
 ## 5.0.40
 
 ### Patch Changes
